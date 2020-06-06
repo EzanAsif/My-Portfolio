@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    padding:0px;
+    margin: 0px;
+    background-color: #130026;
+    color: #fff;
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 2em;
+}
+
+.intro{
+    height: calc(100vh + 53px);
+    color:#fff;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url(../assets/andreas-klassen-1MtkqLdptBo-unsplash.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-repeat: no-repeat;
+    background-size: 400px 1000px; */
+    background-color: #130026;
+}
+
+.intro-heading{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 60pt;
+    font-size: 32pt;
+    margin: 0 0 20px 0;
+    /* background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px); */
+}
+
+.intro-heading h1{
+    font-size: 50px;
+    font-family: "Raleway";
+}
+
+
+
+.diff-color-head{
+    color:#D03737;
+}
+
+.page-link{
+
+    padding: 12px 20px 12px 20px;
+    font-size: 16pt;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #fff;
+    line-height: 18pt;
+    font-family: "Raleway";
+    background: transparent;
+    text-decoration: none;
+    
+
+}
+
+.page-link:hover{
+    color: #D03737;
+    background-color: #fff;
+    
+}
+
+.page-link:focus{
+    outline:none;
+}
+
+
+.page-link i{
+    /* padding-left: 20px; */
+    transition: all 0.2s;
+    /* animation:  link-arrow-animate 4s ease-in-out infinite ; */
+}
+
+.page-link i:hover{
+    padding: 0 !important;
+    transform: rotate(90deg);
+}
+
+.navbar-div{
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.navbar{
+    /* bottom: 0;
+    left: 0; */
+    /* position: relative; */
+    background: #0d011a;
+    border-bottom: 3px solid #D03737;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-logo-image{
+    /* color: black;
+    -webkit-text-fill-color: white; Will override color (regardless of order) */
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    width: 40px;
+    height: 30px;
+}
+
+.navbar .nav-logo{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 20px;
+}
+
+.nav-logo h3{
+    position: fixed;
+    top: 0;
+}
+
+.nav-links{
+    list-style-type:none;
+    display: flex;
+    color: #130026;
+    justify-content: space-around;
+}
+
+.nav-links .nav-button{
+    background-color: transparent;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.nav-links .nav-button:hover{
+    background-color: transparent;
+    color:#fff;
+}
+
+.nav-links .home-nav-button{
+    background-color: transparent;
+    color:#D03737;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    /* border: 2px solid #0d011a; */
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links li {
+    display: inline-flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+    font-family: "raleway";
+    text-align: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-family: "raleway";
+}
+
+.nav-links li:hover{
+    border-bottom: 1px solid #D03737;
+    
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.hamburger-icon div{
+    width: 25px;
+    height: 3px;
+    background-color:#fff;
+    margin: 5px;
+    transition: all 0.35s ease;
+}
+
+.about{
+    background-image: url('../assets/background-cement-concrete-paint-242236.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.abt-section{
+    display: flex;
+    padding-top: 50px;
+    /* background-color: #E6E6E6 !important; */
+    /* background-image: url('../assets/andreas-klassen-1MtkqLdptBo-unsplash.jpg'); */
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abt-heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25pt;
+    color: #444649;
+    font-family: 'Raleway',sans-serif;
+    line-height: 18pt;
+    letter-spacing: 1.8px;
+
+}
+
+.abt-heading h1{
+    border-bottom: 4px solid #D03737;
+    line-height: 1.2;
+}
+
+.abt-pic{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    width: 250px;
+    border: 2px solid #D03737;
+    border-radius: 50%;
+}
+
+.abt-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.abt-description{
+    margin: 0 auto;
+    width: 60%;
+    max-width: 1600px;
+    text-align: center;
+}
+
+.abt-description p{
+    font-weight: bold ;
+    padding: 0;
+    font-size: 1.375em;
+    text-align: center;
+    line-height: 1.4em;
+    color: #444649;
+}
+
+.abt-tech-stack{
+    /* border: 2px solid #B2B2B2; */
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 18%;
+    height: 35vh;
+    color: #444649;
+}
+
+.abt-tech-stack h2{
+    text-align: center;
+    font-size: 1.7em;
+    color: #D03737;
+}
+
+.abt-tech-stack ul{
+    list-style-type: none;
+    line-height: 2;
+    font-size:15px
+
+}
+
+.portfolio{
+    height: fit-content;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    padding: 3.125em 0;
+    flex-direction: column;
+    margin-bottom:50px
+}
+
+.portfolio h1{
+    font-size: 2.5em;
+    color: #D03737;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 0.625em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100%;
+
+}
+
+.portfolio .portfolio-detail{
+    width: 80%;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1.375em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.work-cards{
+
+    padding-right: 100px;
+    margin: 30px;
+}
+
+.work-cards ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 45% 40%;
+    grid-gap: 80px;
+    padding-left: 150px;
+    padding-right: 50px;
+    margin-bottom:100px;
+}
+
+.work-cards .app-details-card{
+    height: fit-content;
+    /* border: 2px solid #fff; */
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.work-cards .app-details-card h2{
+
+    font-size:2.2em;
+    letter-spacing: 2px;
+    line-height: 2;
+    border-bottom: 1.5px solid #D03737
+}
+
+.work-cards .app-pic-card{
+    width: 100%;
+    margin-left: 100px;
+    text-align: center;
+    /* border: 2px solid #fff; */
+    border-radius: 25px;
+    height: 350px;
+    /* background-size: 490px 350px; */
+    background-repeat: no-repeat;
+}
+    
+
+.work-cards .app-details-card .app-description{
+    line-height: 25px;
+}
+
+#first-card{
+    background-image: url('../assets/Store-locator-app.jpg');
+    background-size: 100% 100%;
+}
+
+#second-card{
+    background-image: url('../assets/beatbox-app.jpg');
+    background-size: 100% 100%;
+}
+#third-card{
+    background-image: url('../assets/Store-locator-app.jpg');
+    background-size: 100% 100%;
+
+}
+
+.app-link{
+
+    float:right;
+    padding: 9px 17px 9px 17px;
+    font-size: 14pt;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.35s;
+    color: #fff;
+    line-height: 18pt;
+    font-family: "Raleway";
+    background: transparent;
+
+}
+
+.app-link:hover{
+    background-color: #D03737;
+    color: #fff;
+    border:2px solid #D03737;
+}
+
+.app-link:focus{
+    outline:none;
+}
+
+.link-github-portfolio{
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    font-size: 14pt;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.35s;
+    color: #D03737;
+    line-height: 18pt;
+    font-family: "Raleway";
+    background: transparent;
+    border-radius: 30px;
+
+}
+
+.link-github-portfolio:hover{
+    background-color: #D03737;
+    color: #fff;
+    border:2px solid #D03737;
+}
+
+.link-github-portfolio:focus{
+    outline:none;
+}
+
+.want-to-work{
+
+    height: fit-content;
+    padding: 20px ;
+    background-color: #D03737;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px !important;
+    margin-bottom: 50px;
+    /* transform: skew(0deg); */
+    /* animation: animate 5s ease-in-out infinite; */
+
+}
+
+
+
+.want-to-work h1{
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 0.625em;
+    text-transform: uppercase;
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+}
+
+.want-to-work .want-to-work-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:2em;
+}
+
+.want-to-work .want-to-work-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 10px;
+    font-size: 16pt;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.35s;
+    color: #fff;
+    line-height: 18pt;
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    background: transparent;
+    border-radius: 5px;
+    animation: work-animate 1.75s ease-in-out infinite;
+
+}
+
+.want-to-work-button:hover{
+    color: #0d011a;
+    background-color: #fff;
+    border:2px solid #D03737;
+}
+
+.want-to-work-button:focus{
+    outline:none;
+}
+
+.want-to-work .want-to-work-button i{
+    margin-right: 10px;
+}
+
+.social-links-container{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.social-links-container button{
+    background: transparent;
+    color:#fff;
+    border: none;
+    text-transform: uppercase;
+    font: inherit;
+}
+
+.social-links-container button:focus{
+    outline: none;
+}
+
+.social-links-container button:hover{
+    color:#130026;
+}
+
+.social-links-container li{
+    padding-right: 50px;
+    padding-left: 10px;
+    border-right: 1px solid #fff;
+}
+
+.social-links-container .lst-button{
+    border:none;
+}
+
+.sec-footer{
+    margin: 20px;
+
+}
+
+.footer{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-txt{
+    width: 90%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.ft-name{
+    color: #D03737;
+}
+
+/* ------------------------------------------------- */
+/* Media Queries */
+
+@media (max-width: 1350px) and (min-width:990px){
+
+    .abt-tech-stack{
+        width: 25%;
+        height: 40vh;
+        color: #444649;
+        font-size:1em;
+    }
+
+    .abt-tech-stack ul{
+        font-size: 14px;
+    }
+
+    .work-cards{
+        padding-right: 0 !important;
+    }
+    .work-cards ul{
+        grid-template-columns: 50% 45%;
+        grid-gap: 50px;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+
+    .work-cards .app-pic-card{
+        margin-left:0px !important;
+    }
+    
+    
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+    .intro-heading{
+        line-height: 60pt;
+        font-size: 25pt;      
+    }
+
+    .abt-description{
+        width: 80%;
+        font-size: 1em;
+    }
+    .abt-tech-stack{
+        width: 25%;
+        font-size:0.8em;
+    }
+
+    .work-cards{
+        padding-right: 0 !important;
+    }
+    .work-cards ul{
+        grid-template-columns: 50% 45%;
+        grid-gap: 30px;
+        padding-left: 10px;
+        padding-right: 0px !important;
+    }
+
+    .work-cards .app-pic-card{
+        margin-left:0px !important;
+    }
+
+    .want-to-work .want-to-work-text{
+        font-size: 1.4em;
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .intro-heading{
+        line-height: 40pt;
+        font-size: 17pt;      
+    }
+
+    .nav-links{
+        background-color: #130026;
+        opacity: 0.875;
+        border-left: 1px solid #D03737;
+        border-right: 1px solid #D03737;
+        position: relative;
+        left: 210px;
+        height: 94vh;
+        top: 50vh;
+        transition: transform 0.4s ease-in;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+
+    .hamburger-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .abt-description{
+        width: 90%;
+        font-size: 0.85em;
+    }
+    .abt-tech-stack{
+        width: 45%;
+        font-size:0.6em;
+    }
+    .portfolio p{
+        font-size: 1.15em;
+    }
+    .work-cards{
+        padding-right: 0 !important;
+    }
+    .work-cards ul{
+        grid-template-columns: 89%;
+        grid-gap: 30px;
+        padding-left: 10px;
+
+    }
+    .work-cards .app-pic-card{
+        margin-left:0px !important;
+    }
+    .work-cards .app-details-card .app-description{
+        line-height: 20px;
+        font-size:1.1em;
+    }
+    .app-link{
+        margin-right:100px;
+    }
+    .want-to-work h1{
+        font-size: 2.2em;
+        letter-spacing: 4px;
+    }
+    .want-to-work .want-to-work-text{
+        width: 90%;
+        font-size: 1.2em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 530px) {
+
+    .intro-heading h1{
+        line-height: 25pt;
+        font-size: 20pt;      
+    }
+    .page-link{
+
+        padding: 10px 18px 10px 18px;
+        font-size: 12pt;
+        line-height: 18pt;
+        font-family: "Raleway";
+        background: transparent;
+    
+    }
+    /* .nav-links{
+        left: 110px;
+    } */
+    .nav-links{
+        left: 120px;
+    }
+    .abt-description{
+        width: 80%;
+        font-size: 0.75em;
+    }
+    .abt-tech-stack{
+        width: 50%;
+        font-size:0.75em;
+    }
+    .portfolio p{
+        font-size: 1em;
+    }
+    .work-cards .app-details-card .app-description{
+        line-height: 19px;
+        font-size:1.1em;
+    }
+    .app-link{
+        margin-right:50px !important;
+        padding: 9px 17px 9px 17px;
+        font-size: 13pt;
+        line-height: 15pt;  
+    }
+    
+    .want-to-work .want-to-work-text{
+        width: 100%;
+        font-size: 1.1em !important;
+    }
+    .want-to-work h1{
+        width: 100%;
+        font-size: 1.5em !important;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 2px;
+    }
+    .social-links-container{
+        justify-content:space-around;
+    }
+    .social-links-container ul{
+        justify-content: center;
+    }
+    .social-links-container li{
+        border:none !important; 
+    }
+
+    .want-to-work .want-to-work-text{
+        width: 90%;
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+
+    .intro {
+        height: calc(100vh + 90px);
+    }
+    
+    .portfolio .portfolio-detail {
+        width: 90%;
+        font-weight: bold;
+        padding: 0;
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    .work-cards ul {
+        grid-template-columns: 95%;
+        grid-gap: 30px;
+        padding-left: 10px;
+    }
+
+    .work-cards {
+        /* padding-right: 100px; */
+        margin: 0 !important;
+        margin-left: 13px;
+    }
+
+    .work-cards .app-details-card h2 {
+        font-size: 1.8em;
+    }
+
+    .work-cards .app-details-card .app-description {
+        line-height: 19px;
+        font-size: 17px;
+    }
+
+    .app-link {
+        margin-right: 75px !important;
+    }
+    
+    .link-github-portfolio {
+        font-size: 13pt;
+        padding: 15px;
+    }
+
+    .want-to-work .want-to-work-text{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .want-to-work .want-to-work-button{
+        font-size: 13pt;
+    }
+
+    .footer-txt{
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+/* @keyframes animate{
+    
+    0%
+    {
+        transform: translate(0,0);
+        box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+    50%
+    {
+        transform: translate(10px,-10px);
+        box-shadow: -50px 50px 0 rgba(0, 0, 0, 0.2);
+    }
+} */
+
+@keyframes work-animate{
+    0%,100%
+    {
+        transform: translate(0,0);
+        box-shadow: -0px 0px 0 rgba(0, 0, 0, 0.2);
+    }
+    50%
+    {
+        transform: translate(2px,-2px);
+        box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+}
+/* 
+
+@keyframes pglink-arrow-animate{
+    0%,100%
+    {
+        transform: translate(0,0);
+        box-shadow: -2px 2px 0 rgba(208, 55, 55, 0.2);
+    }
+    50%
+    {
+        transform: translate(2px,-2px);
+        box-shadow: -8px 8px 0 rgba(208, 55, 55, 0.2);
+        
+    }
+
+} */
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* 
+.arrow-right{
+    color: #D03737;
+    transform: rotate(90deg);
+    animation: 0.5s;
+} */
